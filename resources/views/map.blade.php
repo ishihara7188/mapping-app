@@ -8,7 +8,12 @@
         <title>Maps</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+        <!-- CSS / Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+
         <style>
             #map {
                 height: 100%;
@@ -21,10 +26,18 @@
         </style>
     </head>
     <body>
-        
-        <div id="map" style="height: 500px; width: 98%; margin: 2rem auto 0;"></div>
-        <button id="getcurrentlocation">現在地取得</button>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h1 class="my-3">Cafe  Search</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn" id="getcurrentlocation">
+                    周辺のカフェを探す
+                </button>
+            </div>
+            <div id="map" style="height: 500px; width: 98%; margin: 2rem auto 0;"></div>
 
+        </div>
         <!-- jqueryの読み込む -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- google map api -->
